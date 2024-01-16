@@ -2,3 +2,4 @@ bin/
 temp/
 go.sum
 videos/
+*.exe
