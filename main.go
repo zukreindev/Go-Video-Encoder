@@ -218,7 +218,6 @@ func extractBinFolder(zipFilePath string) error {
 			if err != nil {
 				return err
 			}
-			fmt.Println(f.Name)
 
 			defer rc.Close()
 
@@ -247,7 +246,7 @@ func extractBinFolder(zipFilePath string) error {
 				return err
 			}
 
-			f.Close()
+			rc.Close()
 		}
 	}
 
